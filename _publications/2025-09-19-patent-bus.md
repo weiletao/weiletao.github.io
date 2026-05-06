@@ -10,4 +10,21 @@ paperurl: 'https://weiletao.github.io/files/一种基于神经网络的乳腺超
 bibtexurl: 'https://weiletao.github.io/files/wei2025breast_ultrasound_segmentation.bib'
 citation: '韦乐涛, 范嘉豪, 张帅, 余星燃, 王劲东. 一种基于神经网络的乳腺超声图像分割方法:CN202510126909.X[P]. 2025-09-19.'
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+The present invention discloses a neural network-based breast ultrasound image segmentation method, belonging to the technical field of image processing. The method comprises the following steps:
+
+S1. Acquiring breast ultrasound images, and sequentially performing convolution processing and flattening processing on the breast ultrasound images using convolutional layers;
+
+S2. Performing feature extraction to obtain original feature maps;
+
+S3. Performing reshaping and flattening operations to obtain flattened feature maps;
+
+S4. Inputting the flattened feature maps into a convolutional feature extraction module to obtain low-level feature maps;
+
+S5. Inputting the low-level feature maps into a convolutional attention module to obtain weighted feature maps;
+
+S6. Inputting the original feature maps and the weighted feature maps into a cross-attention module to obtain final feature maps;
+
+S7. Completing the breast ultrasound image segmentation.
+
+The invention reduces noise interference in low-level convolutional feature maps by combining channel attention and spatial attention, thereby avoiding the introduction of excessive noise into deep networks and alleviating the impact of noise on segmentation results.
+
